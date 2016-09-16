@@ -190,7 +190,7 @@ header .subtext-banner {
 .card {
   clear: both;
   margin: 30px;
-  padding: 20px 40px 40px;
+  padding: 20px 0px 20px;
   text-align: left;
   border-top: 4px solid #ED3726;
 }
@@ -391,15 +391,23 @@ input[type="radio"] + label {
 /* Submit button */
 /* Tour page styles */
 table {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 table th,
 table td {
-  padding: 0;
+  padding: 0 10px 0 0;
   width: 33.3333%;
+  vertical-align: top;
 }
 table caption {
   text-align: left;
+  padding-left: 10px;
+}
+@media screen and (min-width: 840px) {
+  table {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -411,9 +419,14 @@ table caption {
     display: inline-block;
     width: 20px;
     height: 25px;
-    margin: 10px;
     content: 'Icon of a guitar pick';
     text-indent: -9999px;
     background: url("../img/guitar_pick.svg") top left no-repeat;
+  }
+  .heading.tour-heading:before {
+    margin: 0 10px 0 0;
+  }
+  .heading.tour-heading:after {
+    margin: 0 0 0 10px;
   }
 }

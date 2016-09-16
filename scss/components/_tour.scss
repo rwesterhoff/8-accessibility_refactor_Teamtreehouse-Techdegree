@@ -1,14 +1,20 @@
 /* Tour page styles */
 
 table {
-	padding: 20px 0;
+    padding-top: 20px;
+    padding-left: 10px;
     th,
     td {
-        padding: 0;
+        padding: 0 10px 0 0;
         width: 33.3333%;
+        vertical-align: top;
     }
     caption {
-    	text-align: left;
+        text-align: left;
+        padding-left: 10px;
+    }
+    @media screen and (min-width: #{$bkp-large}) {
+        width: 50%;
     }
 }
 
@@ -21,10 +27,15 @@ table {
             display: inline-block;
             width: 20px;
             height: 25px;
-            margin: 10px;
             content: 'Icon of a guitar pick';
             text-indent: -9999px;
             background: url("../img/guitar_pick.svg") top left no-repeat;
+        }
+        &:before {
+            margin: 0 10px 0 0;
+        }
+        &:after {
+            margin: 0 0 0 10px;
         }
     }
 }
