@@ -1,0 +1,128 @@
+/* Form styles */
+
+// Make customizing possible
+select,
+textarea,
+input {
+    border: none;
+    appearance: none;
+    @extend %custom-hover-focus;
+    @extend %transition;
+}
+
+//Style textual input fields
+select,
+textarea,
+input:not([type='radio']):not([type='checkbox']):not([type='submit']) {
+    font-family: $font-stack;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0 1em;
+}
+
+textarea {
+    padding: 1em;
+}
+
+//Set dropdown arrow image
+select {
+    background: url(#{$img-path}icon-arrow-dwn.svg);
+    background-color: $dusty-gray;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+//Style all input field backgrounds and borders but submit
+select,
+textarea,
+input:not([type='submit']) {
+    border-radius: 0;
+    background-color: $dusty-gray;
+    &:hover,
+    &:focus {
+        background-color: white;
+    }
+}
+
+// Give everthing some space to breath
+input:not([type='radio']):not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+/* Radio's  */
+
+#radio-group {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        height: 20px;
+        padding: 0;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        @media screen and (min-width: #{$bkp-large}) {
+            display: inline;
+        }
+    }
+}
+
+input[type='radio'] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border-radius: 100%;
+    &:checked {
+        border: 4px solid $dusty-gray;
+        background-color: $baltic-sea;
+    }
+}
+
+
+/* Fieldset styling */
+
+fieldset {
+    border: none;
+    &:first-child {
+        margin-top: 20px;
+    }
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Legend styling */
+
+legend {
+    color: white;
+    @extend %uppercase;
+    @extend %letter-spacing;
+}
+
+
+/* Label styling */
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] + label {
+    display: inline;
+    position: relative;
+    top: -4px;
+    margin: 0 10px;
+}
+
+
+/* Submit button */
+
+input[type='submit'] {
+    @extend %button;
+}

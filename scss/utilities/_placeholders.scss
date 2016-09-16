@@ -1,0 +1,46 @@
+/* Shared styles */
+
+%transition {
+    transition: all .5s;
+}
+
+%uppercase {
+    text-transform: uppercase;
+}
+
+%text-center {
+    text-align: center;
+}
+
+%letter-spacing {
+    letter-spacing: 2px;
+}
+
+%button {
+    font-family: $font-stack;
+    font-size: 1em;
+    display: inline-block;
+    padding: 10px;
+    color: $dusty-gray;
+    border: 2px solid $dusty-gray;
+    border-radius: 0;
+    outline: none;
+    background-color: transparent;
+    @extend %transition;
+    &:hover,
+    &:focus {
+        color: $baltic-sea;
+        border: 2px solid transparent;
+        background: white;
+    }
+}
+
+%custom-hover-focus {
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+
+
+

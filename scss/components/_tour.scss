@@ -1,0 +1,30 @@
+/* Tour page styles */
+
+table {
+	padding: 20px 0;
+    th,
+    td {
+        padding: 0;
+        width: 33.3333%;
+    }
+    caption {
+    	text-align: left;
+    }
+}
+
+@media screen and (min-width: #{$bkp-small}) {
+    .heading.tour-heading {
+        display: inline-block;
+        margin: 0 25px 25px 0;
+        &:before,
+        &:after {
+            display: inline-block;
+            width: 20px;
+            height: 25px;
+            margin: 10px;
+            content: 'Icon of a guitar pick';
+            text-indent: -9999px;
+            background: url("../img/guitar_pick.svg") top left no-repeat;
+        }
+    }
+}

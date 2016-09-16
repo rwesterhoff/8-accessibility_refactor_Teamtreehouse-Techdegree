@@ -1,0 +1,39 @@
+/* Navigation styles */
+.main-nav {
+    position: fixed;
+    width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    background: rgba(45, 43, 48, .8);
+    @extend %text-center;
+}
+
+.nav {
+    font-weight: 700;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    .name {
+        display: block;
+        margin-right: auto;
+        letter-spacing: 5px;
+        color: white;
+    }
+    li {
+        padding: 5px 10px 10px 10px;
+    }
+    a {
+        @extend %transition;
+    }
+    a:hover,
+    a:focus {
+        color: white;
+        @extend %custom-hover-focus;
+    }
+    @media screen and (min-width: #{$bkp-large}) {
+        max-width: 1200px;
+        padding: 0 30px;
+    }
+}

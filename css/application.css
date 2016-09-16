@@ -1,0 +1,422 @@
+/* ------------------------------------------------------ *\
+	BASE
+\* ------------------------------------------------------ */
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #3A9980;
+  background: #2D2B30;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #999;
+}
+
+.heading {
+  font-size: 2em;
+  margin-top: 10px;
+  color: #ED3726;
+}
+
+.clearfix {
+  clear: both;
+}
+
+@media screen and (min-width: 840px) {
+  .flex {
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+}
+/* Shared styles */
+.card a.buy, input[type='submit'], .nav a, select,
+textarea,
+input {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.heading, header .heading-banner, .tagline, legend {
+  text-transform: uppercase;
+}
+
+body, .main-nav, header, .information {
+  text-align: center;
+}
+
+header .heading-banner, header .subtext-banner, legend {
+  letter-spacing: 2px;
+}
+
+.card a.buy, input[type='submit'] {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  display: inline-block;
+  padding: 10px;
+  color: #999;
+  border: 2px solid #999;
+  border-radius: 0;
+  outline: none;
+  background-color: transparent;
+}
+.card a.buy:hover, input[type='submit']:hover, .card a.buy:focus, input[type='submit']:focus {
+  color: #2D2B30;
+  border: 2px solid transparent;
+  background: white;
+}
+
+.nav a:hover, footer .social:hover, select:hover,
+textarea:hover,
+input:hover,
+.nav a:focus, footer .social:focus, select:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+/* ------------------------------------------------------ *\
+	COMPONENTS
+\* ------------------------------------------------------ */
+/* Main styles */
+@media screen and (min-width: 840px) {
+  main {
+    padding-top: 20px;
+  }
+  main p {
+    line-height: 1.6em;
+  }
+}
+
+/* Navigation styles */
+.main-nav {
+  position: fixed;
+  width: 100%;
+  min-height: 30px;
+  padding: 10px;
+  background: rgba(45, 43, 48, 0.8);
+}
+
+.nav {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.nav .name {
+  display: block;
+  margin-right: auto;
+  letter-spacing: 5px;
+  color: white;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a:hover,
+.nav a:focus {
+  color: white;
+}
+@media screen and (min-width: 840px) {
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+}
+
+/* Header styles */
+header {
+  overflow: hidden;
+  height: 350px;
+  padding-top: 60px;
+  background: url("../img/concert02_no_text.jpg") no-repeat top center;
+  background-size: cover;
+}
+header.name {
+  font-size: 3em;
+}
+header .heading-banner {
+  font-size: 4em;
+  margin-top: 75px;
+  margin-bottom: 0;
+  color: #2D2B30;
+}
+header .subtext-banner {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 25px;
+  color: #781125;
+}
+@media screen and (min-width: 840px) {
+  header {
+    min-height: 470px;
+  }
+}
+
+.tag {
+  padding: 10px;
+  letter-spacing: 5px;
+  color: black;
+}
+
+.name {
+  font-weight: 300;
+}
+
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  color: #ED3726;
+}
+
+/*Card styles */
+.card {
+  clear: both;
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  border-top: 4px solid #ED3726;
+}
+.card:hover {
+  border-color: #96731A;
+}
+@media screen and (min-width: 840px) {
+  .card {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+  }
+}
+
+.photo {
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 840px) {
+  .photo {
+    width: 30%;
+    margin: 20px 30px;
+  }
+}
+
+.information {
+  width: 100%;
+}
+@media screen and (min-width: 840px) {
+  .information {
+    text-align: left;
+  }
+}
+
+/* Footer styles */
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+footer .copyright {
+  font-size: .75em;
+  top: -8px;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer ul li {
+  display: inline-block;
+}
+footer .social {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  text-indent: -99999px;
+  opacity: .4;
+  background-size: 30px 30px;
+}
+footer .social:hover, footer .social:focus {
+  opacity: 1;
+}
+footer .twitter {
+  background-image: url(../img/twitter-32.png);
+}
+footer .youtube {
+  background-image: url(../img/youtube-32.png);
+}
+footer .spotify {
+  background-image: url(../img/spotify-32.png);
+}
+@media screen and (min-width: 840px) {
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
+
+/* Form styles */
+select,
+textarea,
+input {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+select,
+textarea,
+input:not([type='radio']):not([type='checkbox']):not([type='submit']) {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 1em;
+}
+
+textarea {
+  padding: 1em;
+}
+
+select {
+  background: url(../img/icon-arrow-dwn.svg);
+  background-color: #999;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+select,
+textarea,
+input:not([type='submit']) {
+  border-radius: 0;
+  background-color: #999;
+}
+select:hover, select:focus,
+textarea:hover,
+textarea:focus,
+input:not([type='submit']):hover,
+input:not([type='submit']):focus {
+  background-color: white;
+}
+
+input:not([type='radio']):not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* Radio's  */
+#radio-group {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#radio-group li {
+  height: 20px;
+  padding: 0;
+}
+#radio-group li:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 840px) {
+  #radio-group li {
+    display: inline;
+  }
+}
+
+input[type='radio'] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border-radius: 100%;
+}
+input[type='radio']:checked {
+  border: 4px solid #999;
+  background-color: #2D2B30;
+}
+
+/* Fieldset styling */
+fieldset {
+  border: none;
+}
+fieldset:first-child {
+  margin-top: 20px;
+}
+fieldset:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* Legend styling */
+legend {
+  color: white;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] + label {
+  display: inline;
+  position: relative;
+  top: -4px;
+  margin: 0 10px;
+}
+
+/* Submit button */
+/* Tour page styles */
+table {
+  padding: 20px 0;
+}
+table th,
+table td {
+  padding: 0;
+  width: 33.3333%;
+}
+table caption {
+  text-align: left;
+}
+
+@media screen and (min-width: 320px) {
+  .heading.tour-heading {
+    display: inline-block;
+    margin: 0 25px 25px 0;
+  }
+  .heading.tour-heading:before, .heading.tour-heading:after {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    margin: 10px;
+    content: 'Icon of a guitar pick';
+    text-indent: -9999px;
+    background: url("../img/guitar_pick.svg") top left no-repeat;
+  }
+}

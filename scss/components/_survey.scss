@@ -1,0 +1,25 @@
+/* Survey page styles */
+
+.photo {
+    width: 60%;
+    // height: 0%;
+    padding: 10px;
+    @media screen and (min-width: #{$bkp-large}) {
+        width: 40%;
+    }
+}
+
+form {
+    margin: 0 auto;
+    text-align: left;
+    display: inline-block;
+}
+
+
+}
+.container {
+    text-align: center;
+}
+.newsletter {
+    text-align: right;
+}

@@ -1,0 +1,48 @@
+/* Footer styles */
+
+footer {
+    width: 100%;
+    min-height: 30px;
+    padding: 20px 0 40px 20px;
+    .copyright {
+        font-size: .75em;
+        top: -8px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    ul li {
+        display: inline-block;
+    }
+    .social {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        transition: all .5s;
+        text-indent: -99999px;
+        opacity: .4;
+        background-size: 30px 30px;
+        &:hover,
+        &:focus {
+            opacity: 1;
+            @extend %custom-hover-focus;
+        }
+    }
+    .twitter {
+        background-image: url(#{$img-path}twitter-32.png);
+    }
+    .youtube {
+        background-image: url(#{$img-path}youtube-32.png);
+    }
+    .spotify {
+        background-image: url(#{$img-path}spotify-32.png);
+    }
+    @media screen and (min-width: #{$bkp-large}) {
+        font-size: 1.3em;
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+}

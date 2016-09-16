@@ -1,0 +1,39 @@
+/*Card styles */
+.card {
+    clear: both;
+    margin: 30px;
+    padding: 20px 40px 40px;
+    text-align: left;
+    border-top: 4px solid $pomegranate;
+    &:hover {
+        border-color: $hacienda;
+    }
+    a.buy {
+        @extend %button;
+    }
+    @media screen and (min-width: #{$bkp-large}) {
+        width: 80%;
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px 40px 40px;
+    }
+}
+
+.photo {
+    display: block;
+    width: 200px;
+    height: 0%;
+    margin: 0 auto;
+    @media screen and (min-width: #{$bkp-large}) {
+        width: 30%;
+        margin: 20px 30px;
+    }
+}
+
+.information {
+    width: 100%;
+    @extend %text-center;
+    @media screen and (min-width: #{$bkp-large}) {
+        text-align: left;
+    }
+}

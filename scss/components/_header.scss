@@ -1,0 +1,47 @@
+/* Header styles */
+header {
+    overflow: hidden;
+    height: 350px;
+    padding-top: 60px;
+    background: url('#{$img-path}concert02_no_text.jpg') no-repeat top center;
+    background-size: cover;
+    @extend %text-center;
+    &.name {
+        font-size: 3em;
+    }
+    .heading-banner {
+        font-size: 4em;
+        margin-top: 75px;
+        margin-bottom: 0;
+        color: $baltic-sea;
+        @extend %letter-spacing;
+        @extend %uppercase;
+    }
+    .subtext-banner {
+        font-size: 2em;
+        font-weight: 700;
+        margin-top: 25px;
+        color: $claret;
+        @extend %letter-spacing;
+    }
+    @media screen and (min-width: #{$bkp-large}) {
+        min-height: 470px;
+    }
+}
+
+.tag {
+    padding: 10px;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.name {
+    font-weight: 300;
+}
+
+.tagline {
+    font-weight: 600;
+    padding: 20px;
+    color: $pomegranate;
+    @extend %uppercase;
+}

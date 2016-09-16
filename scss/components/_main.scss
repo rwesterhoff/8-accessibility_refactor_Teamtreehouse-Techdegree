@@ -1,0 +1,9 @@
+/* Main styles */
+main {
+    @media screen and (min-width: #{$bkp-large}) {
+        padding-top: 20px;
+        p {
+            line-height: 1.6em;
+        }
+    }
+}
