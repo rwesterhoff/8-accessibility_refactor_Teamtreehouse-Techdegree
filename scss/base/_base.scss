@@ -28,10 +28,6 @@ a {
     @extend %uppercase;
 }
 
-.clearfix {
-    clear: both;
-}
-
 @media screen and (min-width: 840px) {
     .flex {
         display: -ms-flexbox;

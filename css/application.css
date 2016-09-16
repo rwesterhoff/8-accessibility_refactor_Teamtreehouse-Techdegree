@@ -28,10 +28,6 @@ a:hover {
   color: #ED3726;
 }
 
-.clearfix {
-  clear: both;
-}
-
 @media screen and (min-width: 840px) {
   .flex {
     display: -ms-flexbox;
@@ -51,7 +47,7 @@ input {
   transition: all .5s;
 }
 
-.heading, header .heading-banner, .tagline, legend {
+.heading, header .heading-banner, legend {
   text-transform: uppercase;
 }
 
@@ -152,9 +148,6 @@ header {
   background: url("../img/concert02_no_text.jpg") no-repeat top center;
   background-size: cover;
 }
-header.name {
-  font-size: 3em;
-}
 header .heading-banner {
   font-size: 4em;
   margin-top: 75px;
@@ -173,20 +166,8 @@ header .subtext-banner {
   }
 }
 
-.tag {
-  padding: 10px;
-  letter-spacing: 5px;
-  color: black;
-}
-
 .name {
   font-weight: 300;
-}
-
-.tagline {
-  font-weight: 600;
-  padding: 20px;
-  color: #ED3726;
 }
 
 /*Card styles */

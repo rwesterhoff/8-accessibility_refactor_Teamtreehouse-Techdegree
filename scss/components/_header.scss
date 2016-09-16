@@ -6,9 +6,7 @@ header {
     background: url('#{$img-path}concert02_no_text.jpg') no-repeat top center;
     background-size: cover;
     @extend %text-center;
-    &.name {
-        font-size: 3em;
-    }
+    
     .heading-banner {
         font-size: 4em;
         margin-top: 75px;
@@ -28,20 +26,6 @@ header {
         min-height: 470px;
     }
 }
-
-.tag {
-    padding: 10px;
-    letter-spacing: 5px;
-    color: black;
-}
-
 .name {
     font-weight: 300;
-}
-
-.tagline {
-    font-weight: 600;
-    padding: 20px;
-    color: $pomegranate;
-    @extend %uppercase;
 }
