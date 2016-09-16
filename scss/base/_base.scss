@@ -22,10 +22,13 @@ a {
 }
 
 .heading {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 10px;
     color: $pomegranate;
     @extend %uppercase;
+    @media screen and (min-width: #{$bkp-large}) {
+        font-size: 2em;
+    }
 }
 
 @media screen and (min-width: 840px) {

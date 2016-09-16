@@ -23,9 +23,14 @@ a:hover {
 }
 
 .heading {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 10px;
   color: #ED3726;
+}
+@media screen and (min-width: 840px) {
+  .heading {
+    font-size: 2em;
+  }
 }
 
 @media screen and (min-width: 840px) {
@@ -149,16 +154,27 @@ header {
   background-size: cover;
 }
 header .heading-banner {
-  font-size: 4em;
+  font-size: 3em;
   margin-top: 75px;
   margin-bottom: 0;
   color: #2D2B30;
 }
+@media screen and (min-width: 840px) {
+  header .heading-banner {
+    font-size: 4em;
+  }
+}
 header .subtext-banner {
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 700;
-  margin-top: 25px;
+  margin-top: 10px;
   color: #781125;
+}
+@media screen and (min-width: 840px) {
+  header .subtext-banner {
+    font-size: 2em;
+    margin-top: 25px;
+  }
 }
 @media screen and (min-width: 840px) {
   header {
@@ -278,7 +294,7 @@ input:not([type='radio']):not([type='checkbox']):not([type='submit']) {
   font-size: 1em;
   display: block;
   width: 100%;
-  height: 50px;
+  height: 3em;
   padding: 0 1em;
 }
 
@@ -348,7 +364,7 @@ fieldset {
   border: none;
 }
 fieldset:first-child {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 fieldset:not(:last-child) {
   margin-bottom: 30px;
